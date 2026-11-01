@@ -1,0 +1,9 @@
+build/
+build-public/
+*.keystore
+*.jks
+__pycache__/
+*.vvp
+*.log
+*.wav
+.env*
