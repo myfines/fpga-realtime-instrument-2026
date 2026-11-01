@@ -153,13 +153,13 @@ ReferenceActivity连接自绘键盘和直连扩展，WifiSession管理TCP收发�
 
 作品已集成为桌面演奏样机。外观将光电演奏区、摇杆、OLED和视觉模块集中在同一操作结构上，外接DAC与音箱形成完整发声系统。以下实物照片展示面板、光电阵列及侧面安装关系。
 
-![作品面板与前侧光电演奏区实物](figures/front-angle.jpg)
+![作品整体面板与前侧光电演奏区实物](figures/final-front.jpg)
 
-图6 作品面板与前侧光电演奏区实物
+图6 作品整体面板与前侧光电演奏区实物
 
-![作品斜侧面与视觉模块运行实物](figures/side.jpg)
+![支撑结构 光电阵列与内部模块布局实物](figures/final-structure.jpg)
 
-图7 作品斜侧面与视觉模块运行实物
+图7 支撑结构 光电阵列与内部模块布局实物
 
 工程成果
 
@@ -171,9 +171,9 @@ ReferenceActivity连接自绘键盘和直连扩展，WifiSession管理TCP收发�
 
 完成FPGA、ADC、光电、视觉串口、热点通信、OLED与I²S DAC连接。图中为主控与线缆连接的实物局部，关键引脚对应关系见第二部分信号图。E049设计构建入口、约束与源文件随源码仓库提供。
 
-![主控安装与电路连接局部实物](figures/circuit-side.jpg)
+![主控板 DAC模块与内部连线实物](figures/final-circuit.jpg)
 
-图8 主控安装与电路连接局部实物
+图8 主控板 DAC模块与内部连线实物
 
 3.2.3 软件成果
 
