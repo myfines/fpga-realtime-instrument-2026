@@ -21,6 +21,8 @@
 |fpga/sim|RTL仿真测试台|
 |android|App 0.16源码、清单、构建及测试|
 |k230|视觉手势与串口协议代码|
+|fpga/web|浏览器控制页面与可选中继页面|
+|fpga/tools|正式构建入口、网页ROM生成与可选HTTP中继工具|
 |docs|作品报告与使用说明|
 
 ## 构建与使用
@@ -40,3 +42,15 @@ K230：使用CanMV及配套手部识别模型，按硬件连接设置串口；`u
 主时钟设计值27 MHz，音频帧576周期，设计输出率46,875 Hz。32声部在同一帧内调度，设计吞吐量为1,500,000声部样本每秒。
 
 报告见[作品设计报告](docs/report.md)。资料来源见[NOTICE](NOTICE.md)。
+
+## 源码交付与依赖
+
+本仓库包含正式 E049 / App 0.16 对应的 FPGA RTL、引脚和时钟约束、Android Java 源码及测试、K230 识别与通信源码、网页控制页面、仿真测试台和构建工具。`fpga/legacy` 与 `fpga/sim/legacy` 保留早期模块及配套测试；正式工程以 `fpga/tools/build.tcl` 列出的源文件为准。
+
+Gowin EDA、Android SDK/JDK、CanMV 固件与手部识别模型属于外部运行或构建依赖，按各提供方许可获取。仓库不包含个人签名密钥；Android 构建脚本会为本地构建生成调试密钥。`SOURCE-MANIFEST.json` 提供逐文件 SHA-256，可用于核对下载包内容。
+
+RTL测试：将 Icarus Verilog 的 `iverilog`、`vvp` 加入 PATH，运行 `powershell -File fpga/sim/run_icarus.ps1`。
+
+K230离线测试：在 `k230` 目录执行 `python -m unittest discover -p "test_*.py"`。这些测试在电脑执行，不访问设备。
+
+网页及中继说明见 [浏览器控制源码](fpga/web/README.md)；完整源码压缩包与本仓库同版本文件对应，不包含 Git 历史、编译缓存、个人密钥和本机调试日志。

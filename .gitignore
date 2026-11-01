@@ -7,3 +7,6 @@ __pycache__/
 *.log
 *.wav
 .env*
+fpga/sim/quality-results/
+fpga/sim/ms/
+fpga/sim/logs/
