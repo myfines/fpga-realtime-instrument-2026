@@ -10,7 +10,7 @@
   "docs/report.md": "4ab4f1c8ba7ab9e43b44edecc5df6fc636031385a027b83bd5013d394732e7a6",
   "docs/report.pdf": "0da880e0014420159e7710fb40db7cd27eedee8a84e2230b8ea3f637081d33de",
   "k230/gesture_protocol.py": "c7331aecb8dcf28b7d7282ad07b934459a1e70f5b8a458643f120c2f8ef20729",
-  "k230/pinch_preview_v2.py": "5067a5c1eea721a354589d444e0fc5c61989926e6730546375c08951f358d0c7",
+  "k230/pinch_preview_v2.py": "ae9593ed7a9e610cd1f121d6f825f03e0797fed995b6e73bad259ab8f94371d2",
   "k230/preflight.py": "a969cf6bd5db192a8dd86a1237fe71dd440d1c53f90199fac41b4f96f8a10b7f",
   "k230/uart_gesture_launcher.example.py": "8c7116f41ccdcccd09da478770b710b588965d1f8062c69fa65a917721cb416f",
   "k230/uart_gesture_sender.py": "5d4b53f573650296ba4e60a99c6585b8de904fd48d10bf4d31df31b66a8bb366",
