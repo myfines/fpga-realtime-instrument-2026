@@ -1,0 +1,69 @@
+{
+  "project": "基于FPGA的多维交互实时多音色合成电子乐器",
+  "versions": {
+    "fpga": "E049",
+    "android": "0.16-e049-instant-effects"
+  },
+  "read_first": "START_HERE.md",
+  "report": "docs/report.pdf",
+  "deployment": "docs/deployment.md",
+  "hardware": "docs/hardware/connections.md",
+  "dependencies": "docs/dependencies.md",
+  "fpga": {
+    "device": "GW2A-LV18PG256C8/I7",
+    "top": "instrument_ap_top",
+    "gui_project": "fpga/project/instrument_e049.gprj",
+    "build_tcl": "fpga/tools/build.tcl",
+    "bitstream": "runtime/fpga/instrument-E049.fs",
+    "source": "fpga/src",
+    "constraints": "fpga/constraints",
+    "tests": "fpga/sim"
+  },
+  "android": {
+    "manifest": "android/AndroidManifest.xml",
+    "source": "android/src",
+    "build": "android/build.ps1",
+    "tests": "android/tests",
+    "apk": "runtime/android/instrument-companion-0.16-e049-instant-effects.apk"
+  },
+  "k230": {
+    "source": "k230",
+    "deployment_files": "runtime/k230/sdcard",
+    "entry": "runtime/k230/sdcard/main.py",
+    "standalone_builder": "scripts/build-k230-uart-sender.py",
+    "model_dependency_paths": [
+      "/sdcard/kmodel/hand_det.kmodel",
+      "/sdcard/kmodel/handkp_det.kmodel"
+    ],
+    "model_files_included": false
+  },
+  "web": {
+    "source": "fpga/web",
+    "relay": "fpga/tools/web_relay.py"
+  },
+  "implementation": {
+    "32_voice_states": "fpga/src/synth32.v",
+    "timbres": "fpga/src/wave_source.v",
+    "adsr": "fpga/src/envelope_control.v",
+    "effects": "fpga/src/fx_engine.v",
+    "input_routing": "fpga/src/note_router.v",
+    "gesture": "fpga/src/gesture_expression.v",
+    "audio_i2s": "fpga/src/i2s_tx16.v",
+    "oled": "fpga/src/oled_ui.v",
+    "spectrum_16band": "fpga/src/spectrum16.v",
+    "score": "fpga/src/song_player.v",
+    "keymap": "fpga/src/keymap_control.v",
+    "pcm_record": "fpga/src/pcm_record.v"
+  },
+  "file_integrity": {
+    "manifest": "SOURCE-MANIFEST.json",
+    "verify": "python scripts/source_manifest.py"
+  },
+  "checks": {
+    "android_build": "passed",
+    "rtl_default_suite": 37,
+    "k230_offline_tests": 32,
+    "web_tool_tests": 11,
+    "meaning": "构建及离线检查结果；实物功能说明见报告与演示材料"
+  }
+}

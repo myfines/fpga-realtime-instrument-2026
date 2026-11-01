@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gowin-fpga-project>
+<Project>
+  <Template>FPGA</Template>
+  <Version>5</Version>
+  <Device name="GW2A-18C" pn="GW2A-LV18PG256C8/I7">gw2a18c-011</Device>
+  <FileList>
+    <File path="../src/ads1015_reader.v" type="file.verilog" enable="1" />
+    <File path="../src/envelope_control.v" type="file.verilog" enable="1" />
+    <File path="../src/esp_at_control.v" type="file.verilog" enable="1" />
+    <File path="../src/esp_command_parser.v" type="file.verilog" enable="1" />
+    <File path="../src/esp_http_request.v" type="file.verilog" enable="1" />
+    <File path="../src/esp_http_rom.v" type="file.verilog" enable="1" />
+    <File path="../src/esp_volume_parser.v" type="file.verilog" enable="1" />
+    <File path="../src/fx_engine.v" type="file.verilog" enable="1" />
+    <File path="../src/gesture_expression.v" type="file.verilog" enable="1" />
+    <File path="../src/gesture_packet_rx.v" type="file.verilog" enable="1" />
+    <File path="../src/gesture_uart_rx.v" type="file.verilog" enable="1" />
+    <File path="../src/i2c_register_bus.v" type="file.verilog" enable="1" />
+    <File path="../src/i2s_tx16.v" type="file.verilog" enable="1" />
+    <File path="../src/instrument_ap_top.v" type="file.verilog" enable="1" />
+    <File path="../src/instrument_core.v" type="file.verilog" enable="1" />
+    <File path="../src/io_arm_control.v" type="file.verilog" enable="1" />
+    <File path="../src/keymap_control.v" type="file.verilog" enable="1" />
+    <File path="../src/led_guide.v" type="file.verilog" enable="1" />
+    <File path="../src/note_router.v" type="file.verilog" enable="1" />
+    <File path="../src/oled_i2c_stream.v" type="file.verilog" enable="1" />
+    <File path="../src/oled_ui.v" type="file.verilog" enable="1" />
+    <File path="../src/optical_keys_reader.v" type="file.verilog" enable="1" />
+    <File path="../src/panel_ctrl.v" type="file.verilog" enable="1" />
+    <File path="../src/pcm_record.v" type="file.verilog" enable="1" />
+    <File path="../src/performance_controls.v" type="file.verilog" enable="1" />
+    <File path="../src/song_player.v" type="file.verilog" enable="1" />
+    <File path="../src/spectrum16.v" type="file.verilog" enable="1" />
+    <File path="../src/synth32.v" type="file.verilog" enable="1" />
+    <File path="../src/uart8n1.v" type="file.verilog" enable="1" />
+    <File path="../src/uart_status.v" type="file.verilog" enable="1" />
+    <File path="../src/wave_source.v" type="file.verilog" enable="1" />
+    <File path="../src/wifi_telemetry.v" type="file.verilog" enable="1" />
+    <File path="../constraints/instrument_e027_ext.cst" type="file.cst" enable="1" />
+    <File path="../constraints/instrument.sdc" type="file.sdc" enable="1" />
+  </FileList>
+</Project>

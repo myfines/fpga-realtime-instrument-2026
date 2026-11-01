@@ -2,6 +2,8 @@
 
 2026年高云选题二作品源码。音频由FPGA根据演奏指令逐声部、逐样本生成；光电、摇杆、视觉手势和手机构成多维演奏交互。
 
+**完整工程入口：[START_HERE.md](START_HERE.md)**。包含可直接打开的Gowin工程、E049正式烧录文件、App 0.16 APK、K230部署脚本，以及构建、接线和使用说明。机器可读索引见 [PROJECT-INDEX.json](PROJECT-INDEX.json)。
+
 ## 作品功能
 
 - 32份独立相位、频率与ADSR声部状态，采用时分流水线完成实时合成。
@@ -24,6 +26,8 @@
 |fpga/web|浏览器控制页面与可选中继页面|
 |fpga/tools|正式构建入口、网页ROM生成与可选HTTP中继工具|
 |docs|作品报告与使用说明|
+|fpga/project|使用相对路径的Gowin GUI工程及正式配置|
+|runtime|FPGA烧录文件、Android正式APK和K230部署脚本|
 
 ## 构建与使用
 

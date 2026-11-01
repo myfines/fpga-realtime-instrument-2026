@@ -1,0 +1,66 @@
+{
+  "fpga": {
+    "version": "E049",
+    "device": "GW2A-LV18PG256C8/I7",
+    "top": "instrument_ap_top",
+    "fs": "runtime/fpga/instrument-E049.fs",
+    "bin": "runtime/fpga/instrument-E049.bin",
+    "usercode": "0xE049",
+    "tool": "Gowin V1.9.11.03 Education",
+    "matches_prior_delivery_fs": true
+  },
+  "android": {
+    "version": "0.16-e049-instant-effects",
+    "versionCode": 16,
+    "package": "cn.myfines.instrument",
+    "apk": "runtime/android/instrument-companion-0.16-e049-instant-effects.apk",
+    "minSdk": 26
+  },
+  "k230": {
+    "deploy_directory": "runtime/k230/sdcard",
+    "entry": "main.py",
+    "transport": "UART1 115200 8N1",
+    "tx_gpio": 9,
+    "fpga_rx": "M14",
+    "v2_sha256": "ae9593ed7a9e610cd1f121d6f825f03e0797fed995b6e73bad259ab8f94371d2",
+    "vendor_reference": "Local supplied vendor HandKeyPointDet classes; whitespace normalized; main loop not used by pinch_preview_v2"
+  },
+  "external_dependencies": [
+    "Gowin EDA",
+    "JDK 17+",
+    "Android SDK platform 37 / Build Tools 36.0.0",
+    "Board-matched CanMV firmware and libs",
+    "hand_det.kmodel",
+    "handkp_det.kmodel"
+  ],
+  "artifacts": {
+    "runtime/android/instrument-companion-0.16-e049-instant-effects.apk": {
+      "bytes": 69975,
+      "sha256": "cde5a5f45021aa9f214486a7a7b7d38c1fcdc84ffddc50fd2ecf76075db9dfa5"
+    },
+    "runtime/fpga/instrument-E049.bin": {
+      "bytes": 907418,
+      "sha256": "93d155b47ba4d6028cac2b99f02aa63d3ba487b451aebba1b9b9ff1a88529517"
+    },
+    "runtime/fpga/instrument-E049.fs": {
+      "bytes": 7264152,
+      "sha256": "e9148e835c0dc08b764a16039bb6696e025b285967bbf6f4129d96d5175a6790"
+    },
+    "runtime/k230/sdcard/k230_hand_keypoint_official.py": {
+      "bytes": 24138,
+      "sha256": "a01f8234cfd6dc99145185ec578b162f021590e6f3d76797c923e4a04bfe7248"
+    },
+    "runtime/k230/sdcard/main.py": {
+      "bytes": 279,
+      "sha256": "b92ff11da8abbe26c4b8fc611456428aecf7f0f2857e1edbc71c53270ba18feb"
+    },
+    "runtime/k230/sdcard/pinch_preview_v2.py": {
+      "bytes": 10474,
+      "sha256": "ae9593ed7a9e610cd1f121d6f825f03e0797fed995b6e73bad259ab8f94371d2"
+    },
+    "runtime/k230/sdcard/uart_gesture_sender_standalone.py": {
+      "bytes": 6319,
+      "sha256": "de7aefb6406658549538fe1d7f51b903aa48451dc729356eb245d564d7a5ff0f"
+    }
+  }
+}

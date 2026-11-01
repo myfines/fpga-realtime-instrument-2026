@@ -1,1 +1,6 @@
 * -text
+*.pdf binary
+*.pptx binary
+*.apk binary
+*.bin binary
+*.fs binary
